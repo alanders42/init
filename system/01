@@ -1,1 +1,1 @@
-netstat -i | awk '{print $1}'
+/etc/debian_version
