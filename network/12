@@ -1,1 +1,1 @@
-ip r
+ip r | awk 'NR==2 {print $9}'
