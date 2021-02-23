@@ -1,6 +1,3 @@
 1. Edit /etc/hostname and replace the name with the new name.
 
-2. Edit /etc/hosts to replace all references to your current system name with the new name.
-
-3. Run this command if you want the changes to take affect without restarting.
-/etc/init.d/hostname.sh start
+2. Edit /etc/hosts to replace all references to your current system name with the new nam
