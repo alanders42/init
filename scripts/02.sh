@@ -1,14 +1,15 @@
-echo "Current Active Users:"
+echo Current Users
 cat /etc/passwd | grep home | awk -F':' '{print $1}'
 echo "\n"
-read -p "Enter the username to delete: "  username
+echo "Enter user to delete:"
+read
 if [ $user ]
 then
         sudo deluser $user
 else
-        echo "Error: No username specified"
+        echo "Error: No username"
 fi
 echo "\n"
-echo "Active Users:"
+echo Current Users
 cat /etc/passwd | grep home | awk -F':' '{print $1}'
 echo "\n"
